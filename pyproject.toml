@@ -10,6 +10,7 @@ requires-python = ">=3.14"
 dependencies = [
     "django==5.2.18",
     "openai>=3.31.0",
+    "psycopg[binary]>=3.3.6",
     "python-dotenv>=1.2.4",
 ]
 

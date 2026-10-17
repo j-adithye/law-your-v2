@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
 
     environment:
-      POSTGRES_DB: vectordb
+      POSTGRES_DB: lawyour
       POSTGRES_USER: appuser
       POSTGRES_PASSWORD: DevPassword_123!
 
