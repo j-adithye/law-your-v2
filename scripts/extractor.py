@@ -73,7 +73,7 @@ def read_pdf():
     pending_title = ""      # bold heading waiting for its "N." line
 
     with pdfplumber.open(PDF_PATH) as pdf:
-        for page in pdf.pages:
+        for page in pdf.pages[73:]:     # Starting from pg no 74 because
             prev_bottom = None
             for line in get_lines(page):
                 text = line["text"].strip()

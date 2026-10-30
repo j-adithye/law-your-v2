@@ -1,28 +1,28 @@
+import json
 import os
-# from openai import OpenAI
-# from dotenv import load_dotenv
 
-# load_dotenv()
-
-# client = OpenAI(
-#     base_url="https://integrate.api.nvidia.com/v1",
-#     api_key=
-#     os.getenv("NVIDIA_API_KEY"),
-# )
-
-# response = client.embeddings.create(
-#     model="nvidia/nemotron-3-embed-1b",
-#     input=["What is the punishment for murder under the BNS?"],
-#     encoding_format="float",
-#     extra_body={"input_type": "query"},
-# )
-
-# vector = response.data[0].embedding
-# print(len(vector))
+directry = os.path.dirname(os.path.abspath(__file__))
+filepath = os.path.join(directry,"data","processed","bns_sections.json")
 
 
-BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PDF_PATH = os.path.join(BASE, "data", "raw", "BNS2023.pdf") 
-OUT_PATH = os.path.join(BASE, "data", "processed", "bns_sections.json")
+# data = "../data/processed/bns_section.json"
 
-print(BASE,PDF_PATH,OUT_PATH)
+
+
+
+with open(filepath,"r", encoding="utf-8") as file:
+    data = json.load(file)
+    # i = 1
+    # while i<358:
+    #     sec_num = data[i]['section_number']
+    #     if i != sec_num:
+    #         print(i)
+    #         i+=1
+    #         break
+    i = 1
+    while i < 358:
+        if str(i+1) != data[i]['section_number']:
+            print(i+1,end=",")
+            i = int(data[i]['section_number'])
+            
+        i+=1
