@@ -16,7 +16,6 @@ import pdfplumber
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PDF_PATH = os.path.join(BASE, "data", "raw", "BNS2023.pdf")
 OUT_PATH = os.path.join(BASE, "data", "processed", "bns_sections.json")
-print(BASE)
 HEADER_CUT = 60     # points cropped from the top of each page
 FOOTER_CUT = 60     # points cropped from the bottom of each page
 PARA_GAP = 20       # normal line gap is 16, paragraph gap is 24
@@ -37,6 +36,16 @@ BLOCK_STARTS = {
 HEAD_ONLY_RE = re.compile(r"^illustrations?\.?$", re.I)
 ANY_BLOCK_RE = re.compile(r"^(illustrations?|explanations?|exceptions?)\b", re.I)
 
+def timer(func):
+    def wrapper(*args,**kwargs):
+        import time
+        start = time.perf_counter()
+        result = func(*args,**kwargs)
+        end = time.perf_counter()
+        tottime = end - start
+        print(round(tottime,2))
+        return result
+    return wrapper
 
 def is_bold(char):
     return "bold" in char["fontname"].lower()
@@ -55,7 +64,7 @@ def get_lines(page):
 def clean_title(raw):
     return re.sub(r"[\s.—–-]+$", "", raw).strip()
 
-
+@timer
 def read_pdf():
     sections = []
     cur = None
@@ -147,7 +156,6 @@ def split_blocks(paragraphs):
                 target = "body"
         out[target].append(p)
     return out
-
 
 def main():
     result = []
