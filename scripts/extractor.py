@@ -20,7 +20,7 @@ HEADER_CUT = 60     # points cropped from the top of each page
 FOOTER_CUT = 60     # points cropped from the bottom of each page
 PARA_GAP = 20       # normal line gap is 16, paragraph gap is 24
 
-SECTION_RE = re.compile(r"^(\d+[A-Z]?)\.\s+(.*)$")
+SECTION_RE = re.compile(r"^(\d+[A-Z]?)\.(?:\s+|(?=\())(.*)$")
 CHAPTER_RE = re.compile(r"^CHAPTER\s+([IVXLC]+)\b")
 # "(1)", "(a)", "(ii)" at the start of a line -> that line starts a new item
 MARKER_RE = re.compile(r"^\((\d+[A-Z]?|[a-z]{1,2}|[ivx]+)\)\s")
@@ -52,7 +52,7 @@ def is_bold(char):
 
 
 def line_all_bold(line):
-    chars = [c for c in line["chars"] if c["text"].strip()]
+    chars = [c for c in line["chars"] if c["text"].isalnum()]
     return bool(chars) and all(is_bold(c) for c in chars)
 
 

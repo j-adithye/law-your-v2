@@ -381,7 +381,7 @@
       "Nothing is an offence which is done by accident or misfortune, and without any criminal intention or knowledge in the doing of a lawful act in a lawful manner by lawful means and with proper care and caution."
     ],
     "illustrations": [
-      "A is at work with a hatchet; the head flies off and kills a man who is standing by. Here, if there was no want of proper caution on the part of A, his act is excusable and not an offence. prevent other harm."
+      "A is at work with a hatchet; the head flies off and kills a man who is standing by. Here, if there was no want of proper caution on the part of A, his act is excusable and not an offence."
     ],
     "explanations": [],
     "exceptions": []
@@ -390,7 +390,7 @@
     "section_number": "19",
     "chapter_number": "III",
     "chapter_title": "GENERAL EXCEPTIONS",
-    "title": "Act likely to cause harm, but done without criminal intent, and to",
+    "title": "Act likely to cause harm, but done without criminal intent, and to prevent other harm",
     "page": 88,
     "body": [
       "Nothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property."
@@ -1972,8 +1972,20 @@
     "title": "Hurt",
     "page": 132,
     "body": [
-      "Whoever causes bodily pain, disease or infirmity to any person is said to cause hurt.",
-      "115.(1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”.",
+      "Whoever causes bodily pain, disease or infirmity to any person is said to cause hurt."
+    ],
+    "illustrations": [],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "115",
+    "chapter_number": "VI",
+    "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+    "title": "Voluntarily causing hurt",
+    "page": 132,
+    "body": [
+      "(1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”.",
       "(2) Whoever, except in the case provided for by sub-section (1) of section 122 voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both."
     ],
     "illustrations": [],
@@ -1995,19 +2007,55 @@
       "(e) Destruction or permanent impairing of the powers of any member or joint;",
       "(f) Permanent disfiguration of the head or face;",
       "(g) Fracture or dislocation of a bone or tooth;",
-      "(h) Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits.",
-      "117.(1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”. Explanation.—A person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind.",
+      "(h) Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits."
+    ],
+    "illustrations": [],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "117",
+    "chapter_number": "VI",
+    "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+    "title": "Voluntarily causing grievous hurt",
+    "page": 132,
+    "body": [
+      "(1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”. Explanation.—A person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind.",
       "(2) Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
       "(3) Whoever commits an offence under sub-section (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life.",
-      "(4) When a group of five or more persons acting in concert, causes grievous hurt to a person on the ground of his race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be guilty of the offence of causing grievous hurt, and shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
-      "118.(1) Whoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both.",
-      "(2) Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine.",
-      "119.(1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer, or from any person interested in the sufferer, any property or valuable security, or of constraining the sufferer or any person interested in such sufferer to do anything which is illegal or which may facilitate the commission of an offence, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
-      "(2) Whoever voluntarily causes grievous hurt for any purpose referred to in sub-section (1), shall be punished with imprisonment for life, or imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine."
+      "(4) When a group of five or more persons acting in concert, causes grievous hurt to a person on the ground of his race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be guilty of the offence of causing grievous hurt, and shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine."
     ],
     "illustrations": [
       "A, intending of knowing himself to be likely permanently to disfigure Z’s face, gives Z a blow which does not permanently disfigure Z’s face, but which causes Z to suffer severe bodily pain for the space of fifteen days. A has voluntarily caused grievous hurt."
     ],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "118",
+    "chapter_number": "VI",
+    "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+    "title": "Voluntarily causing hurt or grievous hurt by dangerous weapons or means",
+    "page": 133,
+    "body": [
+      "(1) Whoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both.",
+      "(2) Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine."
+    ],
+    "illustrations": [],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "119",
+    "chapter_number": "VI",
+    "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+    "title": "Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act",
+    "page": 134,
+    "body": [
+      "(1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer, or from any person interested in the sufferer, any property or valuable security, or of constraining the sufferer or any person interested in such sufferer to do anything which is illegal or which may facilitate the commission of an offence, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+      "(2) Whoever voluntarily causes grievous hurt for any purpose referred to in sub-section (1), shall be punished with imprisonment for life, or imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine."
+    ],
+    "illustrations": [],
     "explanations": [],
     "exceptions": []
   },
@@ -2066,8 +2114,20 @@
     "title": "Causing hurt by means of poison, etc., with intent to commit an offence",
     "page": 136,
     "body": [
-      "Whoever administers to or causes to be taken by any person any poison or any stupefying, intoxicating or unwholesome drug, or other thing with intent to cause hurt to such person, or with intent to commit or to facilitate the commission of an offence or knowing it to be likely that he will thereby cause hurt, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
-      "124.(1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:",
+      "Whoever administers to or causes to be taken by any person any poison or any stupefying, intoxicating or unwholesome drug, or other thing with intent to cause hurt to such person, or with intent to commit or to facilitate the commission of an offence or knowing it to be likely that he will thereby cause hurt, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine."
+    ],
+    "illustrations": [],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "124",
+    "chapter_number": "VI",
+    "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+    "title": "Voluntarily causing grievous hurt by use of acid, etc",
+    "page": 136,
+    "body": [
+      "(1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:",
       "Provided that such fine shall be just and reasonable to meet the medical expenses of the treatment of the victim:",
       "Provided further that any fine imposed under this sub-section shall be paid to the victim.",
       "(2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine."
@@ -2269,15 +2329,28 @@
     "title": "Assault or criminal force on grave provocation",
     "page": 142,
     "body": [
-      "Whoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+      "Whoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both."
+    ],
+    "illustrations": [],
+    "explanations": [
+      "Explanation.—This section is subject to the same Explanation as section 131."
+    ],
+    "exceptions": []
+  },
+  {
+    "section_number": "137",
+    "chapter_number": "VI",
+    "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+    "title": "Kidnapping",
+    "page": 142,
+    "body": [
+      "(1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–",
+      "(a) whoever conveys any person beyond the limits of India without the consent of that person, or of some person legally authorised to consent on behalf of that person, is said to kidnap that person from India;",
+      "(b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship.",
       "(2) Whoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine."
     ],
     "illustrations": [],
     "explanations": [
-      "Explanation.—This section is subject to the same Explanation as section 131.",
-      "137.(1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–",
-      "(a) whoever conveys any person beyond the limits of India without the consent of that person, or of some person legally authorised to consent on behalf of that person, is said to kidnap that person from India;",
-      "(b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship.",
       "Explanation.–The words “lawful guardian” in this clause include any person lawfully entrusted with the care or custody of such child or other person."
     ],
     "exceptions": [
@@ -2311,8 +2384,20 @@
       "(i) soliciting or receiving alms in a public place, whether under the pretence of singing, dancing, fortune telling, performing tricks or selling articles or otherwise;",
       "(ii) entering on any private premises for the purpose of soliciting or receiving alms;",
       "(iii) exposing or exhibiting, with the object of obtaining or extorting alms, any sore, wound, injury, deformity or disease, whether of himself or of any other person or of an animal;",
-      "(iv) using such child as an exhibit for the purpose of soliciting or receiving alms.",
-      "140.(1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+      "(iv) using such child as an exhibit for the purpose of soliciting or receiving alms."
+    ],
+    "illustrations": [],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "140",
+    "chapter_number": "VI",
+    "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+    "title": "Kidnapping or abducting in order to murder or for ransom, etc",
+    "page": 144,
+    "body": [
+      "(1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
       "(2) Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
       "(3) Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
       "(4) Whoever kidnaps or abducts any person in order that such person may be subjected, or may be so disposed of as to be put in danger of being subjected to grievous hurt, or slavery, or to the unnatural lust of any person, or knowing it to be likely that such person will be so subjected or disposed of, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine."
@@ -2344,8 +2429,20 @@
     "title": "Wrongfully concealing or keeping in confinement, kidnapped or abducted person",
     "page": 145,
     "body": [
-      "Whoever, knowing that any person has been kidnapped or has been abducted, wrongfully conceals or confines such person, shall be punished in the same manner as if he had kidnapped or abducted such person with the same intention or knowledge, or for the same purpose as that with or for which he conceals or detains such person in confinement.",
-      "143.(1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—",
+      "Whoever, knowing that any person has been kidnapped or has been abducted, wrongfully conceals or confines such person, shall be punished in the same manner as if he had kidnapped or abducted such person with the same intention or knowledge, or for the same purpose as that with or for which he conceals or detains such person in confinement."
+    ],
+    "illustrations": [],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "143",
+    "chapter_number": "VI",
+    "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+    "title": "Trafficking of person",
+    "page": 145,
+    "body": [
+      "(1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—",
       "(a) using threats; or",
       "(b) using force, or any other form of coercion; or",
       "(c) by abduction; or",
@@ -2358,15 +2455,27 @@
       "(4) Where the offence involves the trafficking of a child, it shall be punishable with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine.",
       "(5) Where the offence involves the trafficking of more than one child, it shall be punishable with rigorous imprisonment for a term which shall not be less than fourteen years, but which may extend to imprisonment for life, and shall also be liable to fine.",
       "(6) If a person is convicted of the offence of trafficking of a child on more than one occasion, then such person shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
-      "(7) When a public servant or a police officer is involved in the trafficking of any person then, such public servant or police officer shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
-      "144.(1) Whoever, knowingly or having reason to believe that a child has been trafficked, engages such child for sexual exploitation in any manner, shall be punished with rigorous imprisonment for a term which shall not be less than five years, but which may extend to ten years, and shall also be liable to fine.",
-      "(2) Whoever, knowingly or having reason to believe that a person has been trafficked, engages such person for sexual exploitation in any manner, shall be punished with rigorous imprisonment for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine."
+      "(7) When a public servant or a police officer is involved in the trafficking of any person then, such public servant or police officer shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine."
     ],
     "illustrations": [],
     "explanations": [
       "Explanation 1.—The expression “exploitation” shall include any act of physical exploitation or any form of sexual exploitation, slavery or practices similar to slavery, servitude, beggary or forced removal of organs.",
       "Explanation 2.—The consent of the victim is immaterial in determination of the offence of trafficking."
     ],
+    "exceptions": []
+  },
+  {
+    "section_number": "144",
+    "chapter_number": "VI",
+    "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+    "title": "Exploitation of a trafficked person",
+    "page": 146,
+    "body": [
+      "(1) Whoever, knowingly or having reason to believe that a child has been trafficked, engages such child for sexual exploitation in any manner, shall be punished with rigorous imprisonment for a term which shall not be less than five years, but which may extend to ten years, and shall also be liable to fine.",
+      "(2) Whoever, knowingly or having reason to believe that a person has been trafficked, engages such person for sexual exploitation in any manner, shall be punished with rigorous imprisonment for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine."
+    ],
+    "illustrations": [],
+    "explanations": [],
     "exceptions": []
   },
   {
@@ -3638,13 +3747,25 @@
     "title": "Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment",
     "page": 176,
     "body": [
-      "Whoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished.",
-      "(2) If innocent person is convicted and sentenced in consequence of false evidence referred to in sub-section (1), with death or imprisonment for more than seven years, the person who threatens shall be punished with the same punishment and sentence in the same manner and to the same extent such innocent person is punished and sentenced."
+      "Whoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished."
     ],
     "illustrations": [
-      "A gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine.",
-      "232.(1) Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both."
+      "A gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine."
     ],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "232",
+    "chapter_number": "XIV",
+    "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+    "title": "Threatening any person to give false evidence",
+    "page": 176,
+    "body": [
+      "(1) Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+      "(2) If innocent person is convicted and sentenced in consequence of false evidence referred to in sub-section (1), with death or imprisonment for more than seven years, the person who threatens shall be punished with the same punishment and sentence in the same manner and to the same extent such innocent person is punished and sentenced."
+    ],
+    "illustrations": [],
     "explanations": [],
     "exceptions": []
   },
@@ -4402,8 +4523,7 @@
     "title": "Negligent conduct with respect to poisonous substance",
     "page": 192,
     "body": [
-      "Whoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both.",
-      "Negligent conduct with respect to fire or combustible matter."
+      "Whoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both."
     ],
     "illustrations": [],
     "explanations": [],
@@ -4413,7 +4533,7 @@
     "section_number": "287",
     "chapter_number": "XV",
     "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE, DECENCY AND MORALS",
-    "title": "",
+    "title": "Negligent conduct with respect to fire or combustible matter",
     "page": 192,
     "body": [
       "Whoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both."
@@ -5086,8 +5206,20 @@
       "(d) destroying or moving any sign or signal used for navigation of rail, aircraft or ship or other thing placed as a guide for navigators, or by any act which renders any such sign or signal less useful as a guide for navigators, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both;",
       "(e) destroying or moving any land-mark fixed by the authority of a public servant, or by any act which renders such land-mark less useful as such, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both;",
       "(f) fire or any explosive substance intending to cause, or knowing it to be likely that he will thereby cause, damage to any property including agricultural produce, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine;",
-      "(g) fire or any explosive substance, intending to cause, or knowing it to be likely that he will thereby cause, the destruction of any building which is ordinarily used as a place of worship or as a human dwelling or as a place for the custody of property, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
-      "327.(1) Whoever commits mischief to any rail, aircraft, or a decked vessel or any vessel of a burden of twenty tons or upwards, intending to destroy or render unsafe, or knowing it to be likely that he will thereby destroy or render unsafe, that rail, aircraft or vessel, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+      "(g) fire or any explosive substance, intending to cause, or knowing it to be likely that he will thereby cause, the destruction of any building which is ordinarily used as a place of worship or as a human dwelling or as a place for the custody of property, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine."
+    ],
+    "illustrations": [],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "327",
+    "chapter_number": "XVII",
+    "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+    "title": "Mischief with intent to destroy or make unsafe a rail, aircraft, decked vessel or one of twenty tons burden",
+    "page": 215,
+    "body": [
+      "(1) Whoever commits mischief to any rail, aircraft, or a decked vessel or any vessel of a burden of twenty tons or upwards, intending to destroy or render unsafe, or knowing it to be likely that he will thereby destroy or render unsafe, that rail, aircraft or vessel, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
       "(2) Whoever commits, or attempts to commit, by fire or any explosive substance, such mischief as is described in sub-section (1), shall be punished with imprisonment for life or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine."
     ],
     "illustrations": [],
@@ -5101,12 +5233,38 @@
     "title": "Punishment for intentionally running vessel aground or ashore with intent to commit theft, etc",
     "page": 216,
     "body": [
-      "Whoever intentionally runs any vessel aground or ashore, intending to commit theft of any property contained therein or to dishonestly misappropriate any such property, or with intent that such theft or misappropriation of property may be committed, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
-      "329.(1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass.",
+      "Whoever intentionally runs any vessel aground or ashore, intending to commit theft of any property contained therein or to dishonestly misappropriate any such property, or with intent that such theft or misappropriation of property may be committed, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine."
+    ],
+    "illustrations": [],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "329",
+    "chapter_number": "XVII",
+    "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+    "title": "Criminal trespass and house-trespass",
+    "page": 216,
+    "body": [
+      "(1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass.",
       "(2) Whoever commits criminal trespass by entering into or remaining in any building, tent or vessel used as a human dwelling or any building used as a place for worship, or as a place for the custody of property, is said to commit house-trespass.",
       "(3) Whoever commits criminal trespass shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to five thousand rupees, or with both.",
-      "(4) Whoever commits house-trespass shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both.",
-      "330.(1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass.",
+      "(4) Whoever commits house-trespass shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both."
+    ],
+    "illustrations": [],
+    "explanations": [
+      "Explanation.—The introduction of any part of the criminal trespasser’s body is entering sufficient to constitute house-trespass."
+    ],
+    "exceptions": []
+  },
+  {
+    "section_number": "330",
+    "chapter_number": "XVII",
+    "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+    "title": "House-trespass and house-breaking",
+    "page": 217,
+    "body": [
+      "(1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass.",
       "(2) A person is said to commit house-breaking who commits house- trespass if he effects his entrance into the house or any part of it in any of the six ways hereinafter described; or if, being in the house or any part of it for the purpose of committing an offence, or having committed an offence therein, he quits the house or any part of it in any of the following ways, namely:–",
       "(a) if he enters or quits through a passage made by himself, or by any abettor of the house-trespass, in order to the committing of the house-trespass;",
       "(b) if he enters or quits through any passage not intended by any person, other than himself or an abettor of the offence, for human entrance; or through any passage to which he has obtained access by scaling or climbing over any wall or building;",
@@ -5126,7 +5284,6 @@
       "(h) Z, the door-keeper of Y, is standing in Y’s doorway. A commits house-trespass by entering the house, having deterred Z from opposing him by threatening to beat him. This is house-breaking."
     ],
     "explanations": [
-      "Explanation.—The introduction of any part of the criminal trespasser’s body is entering sufficient to constitute house-trespass.",
       "Explanation.—Any out-house or building occupied with a house, and between which and such house there is an immediate internal communication, is part of the house within the meaning of this section."
     ],
     "exceptions": []
@@ -5162,7 +5319,7 @@
       "(a) punishable with death, shall be punished with imprisonment for life, or with rigorous imprisonment for a term not exceeding ten years, and shall also be liable to fine;",
       "(b) punishable with imprisonment for life, shall be punished with imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine;",
       "(c) punishable with imprisonment, shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine:",
-      "Provided that if the offence intended to be committed is theft, the term of the imprisonment may be extended to seven years. restraint."
+      "Provided that if the offence intended to be committed is theft, the term of the imprisonment may be extended to seven years."
     ],
     "illustrations": [],
     "explanations": [],
@@ -5172,7 +5329,7 @@
     "section_number": "333",
     "chapter_number": "XVII",
     "chapter_title": "OF OFFENCES AGAINST PROPERTY",
-    "title": "House trespass after preparation for hurt, assault or wrongful",
+    "title": "House trespass after preparation for hurt, assault or wrongful restraint",
     "page": 220,
     "body": [
       "Whoever commits house-trespass, having made preparation for causing hurt to any person or for assaulting any person, or for wrongfully restraining any person, or for putting any person in fear of hurt, or of assault, or of wrongful restraint, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine."
@@ -5276,7 +5433,7 @@
     "title": "Forgery of valuable security, will, etc",
     "page": 225,
     "body": [
-      "Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. 338, knowing it to be forged and intending to use it as genuine."
+      "Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine."
     ],
     "illustrations": [],
     "explanations": [],
@@ -5286,7 +5443,7 @@
     "section_number": "339",
     "chapter_number": "XVIII",
     "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
-    "title": "Having possession of document described in section 337 or section",
+    "title": "Having possession of document described in section 337 or section 338, knowing it to be forged and intending to use it as genuine",
     "page": 225,
     "body": [
       "Whoever has in his possession any document or electronic record, knowing the same to be forged and intending that the same shall fraudulently or dishonestly be used as genuine, shall, if the document or electronic record is one of the description mentioned in section 337 of this Sanhita, be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine; and if the document is one of the description mentioned in section 338, shall be punished with imprisonment for life, or with imprisonment of either description, for a term which may extend to seven years, and shall also be liable to fine."
@@ -5319,8 +5476,20 @@
       "(1) Whoever makes or counterfeits any seal, plate or other instrument for making an impression, intending that the same shall be used for the purpose of committing any forgery which would be punishable under section 338 of this Sanhita, or, with such intent, has in his possession any such seal, plate or other instrument, knowing the same to be counterfeit, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
       "(2) Whoever makes or counterfeits any seal, plate or other instrument for making an impression, intending that the same shall be used for the purpose of committing any forgery which would be punishable under any section of this Chapter other than section 338, or, with such intent, has in his possession any such seal, plate or other instrument, knowing the same to be counterfeit, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
       "(3) Whoever possesses any seal, plate or other instrument knowing the same to be counterfeit, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
-      "(4) Whoever fraudulently or dishonestly uses as genuine any seal, plate or other instrument knowing or having reason to believe the same to be counterfeit, shall be punished in the same manner as if he had made or counterfeited such seal, plate or other instrument.",
-      "342.(1) Whoever counterfeits upon, or in the substance of, any material, any device or mark used for the purpose of authenticating any document described in section 338, intending that such device or mark shall be used for the purpose of giving the appearance of authenticity to any document then forged or thereafter to be forged on such material, or who, with such intent, has in his possession any material upon or in the substance of which any such device or mark has been counterfeited, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+      "(4) Whoever fraudulently or dishonestly uses as genuine any seal, plate or other instrument knowing or having reason to believe the same to be counterfeit, shall be punished in the same manner as if he had made or counterfeited such seal, plate or other instrument."
+    ],
+    "illustrations": [],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "342",
+    "chapter_number": "XVIII",
+    "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+    "title": "Counterfeiting device or mark used for authenticating documents described in section 338, or possessing counterfeit marked material",
+    "page": 226,
+    "body": [
+      "(1) Whoever counterfeits upon, or in the substance of, any material, any device or mark used for the purpose of authenticating any document described in section 338, intending that such device or mark shall be used for the purpose of giving the appearance of authenticity to any document then forged or thereafter to be forged on such material, or who, with such intent, has in his possession any material upon or in the substance of which any such device or mark has been counterfeited, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
       "(2) Whoever counterfeits upon, or in the substance of, any material, any device or mark used for the purpose of authenticating any document or electronic record other than the documents described in section 338, intending that such device or mark shall be used for the purpose of giving the appearance of authenticity to any document then forged or thereafter to be forged on such material, or who with such intent, has in his possession any material upon or in the substance of which any such device or mark has been counterfeited, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine."
     ],
     "illustrations": [],
@@ -5377,8 +5546,20 @@
     "title": "Tampering with property mark with intent to cause injury",
     "page": 228,
     "body": [
-      "Whoever removes, destroys, defaces or adds to any property mark, intending or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
-      "347.(1) Whoever counterfeits any property mark used by any other person shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+      "Whoever removes, destroys, defaces or adds to any property mark, intending or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both."
+    ],
+    "illustrations": [],
+    "explanations": [],
+    "exceptions": []
+  },
+  {
+    "section_number": "347",
+    "chapter_number": "XVIII",
+    "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+    "title": "Counterfeiting a property mark",
+    "page": 228,
+    "body": [
+      "(1) Whoever counterfeits any property mark used by any other person shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
       "(2) Whoever counterfeits any property mark used by a public servant, or any mark used by a public servant to denote that any property has been manufactured by a particular person or at a particular time or place, or that the property is of a particular quality or has passed through a particular office, or that it is entitled to any exemption, or uses as genuine any such mark knowing the same to be counterfeit, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine."
     ],
     "illustrations": [],
