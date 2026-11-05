@@ -1,28 +1,24 @@
-import json
 import os
+from django.conf import settings
 
-directry = os.path.dirname(os.path.abspath(__file__))
-filepath = os.path.join(directry,"data","processed","bns_sections.json")
+from openai import OpenAI
+from dotenv import load_dotenv
 
+load_dotenv()
 
-# data = "../data/processed/bns_section.json"
+client = OpenAI(
+    base_url="https://integrate.api.nvidia.com/v1",
+    api_key=os.getenv("NVIDIA_API_KEY"),
+)
 
+response = client.embeddings.create(
+    model="nvidia/nemotron-3.5-embed-1b",
+    input=["What is the punishment for murder under the BNS?"],
+    encoding_format="float",
+    extra_body={"input_type": "query"},
+)
 
+vector = response.data[0].embedding
+print(len(vector))
 
-
-with open(filepath,"r", encoding="utf-8") as file:
-    data = json.load(file)
-    # i = 1
-    # while i<358:
-    #     sec_num = data[i]['section_number']
-    #     if i != sec_num:
-    #         print(i)
-    #         i+=1
-    #         break
-    i = 1
-    while i < 358:
-        if str(i+1) != data[i]['section_number']:
-            print(i+1,end=",")
-            i = int(data[i]['section_number'])
-            
-        i+=1
+# JSON_PATH = os.path.join(settings.BASE_DIR, "data", "processed", "bns_sections.json")
