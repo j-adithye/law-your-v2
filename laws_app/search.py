@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from pgvector import HalfVector
 from pgvector.django import CosineDistance
+from django.contrib.postgres.search import SearchQuery, SearchRank
+from django.db.models import F
 
 from .models import Section
 
@@ -33,4 +35,13 @@ def vector_search(question: str, k: int = 5):
         .filter(embedding__isnull=False)
         .annotate(distance=CosineDistance("embedding", query_vec))
         .order_by("distance")[:k]
+    )
+    
+def keyword_search(question: str, limit: int = 20):
+    query = SearchQuery(question, search_type="websearch", config="english")
+    return (
+        Section.objects
+        .annotate(rank=SearchRank(F("full_text_search"), query))
+        .filter(full_text_search=query)
+        .order_by("-rank")[:limit]
     )

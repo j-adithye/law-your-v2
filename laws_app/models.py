@@ -1,5 +1,7 @@
 from django.db import models
 from pgvector.django import HalfVectorField, HnswIndex
+from django.contrib.postgres.indexes import GinIndex
+from django.contrib.postgres.search import SearchVectorField
 
 class Chapter(models.Model):
     number = models.IntegerField(primary_key=True)
@@ -23,6 +25,7 @@ class Section(models.Model):
     explanations = models.JSONField(default=list, blank=True)
     exceptions = models.JSONField(default=list, blank=True)
     embedding = HalfVectorField(dimensions=2048,null=True, blank=True)
+    full_text_search = SearchVectorField(null=True)
 
     class Meta:
         ordering = ["number"]
@@ -32,7 +35,12 @@ class Section(models.Model):
             m=16,
             ef_construction=64,
             opclasses=["halfvec_cosine_ops"],
-            )]
+            ),
+            GinIndex(
+            name="full_text_search_ginindex",
+            fields=["full_text_search"]
+                )
+            ]
 
     def __str__(self):
         return f"Section {self.number}: {self.title}"
