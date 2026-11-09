@@ -37,8 +37,13 @@ def vector_search(question: str, k: int = 5):
         .order_by("distance")[:k]
     )
     
-def keyword_search(question: str, limit: int = 20):
-    query = SearchQuery(question, search_type="websearch", config="english")
+import re
+
+def keyword_search(question: str, limit: int = 5):
+    words = re.findall(r"\w+", question)
+    query = SearchQuery(words[0], config="english")
+    for w in words[1:]:
+        query |= SearchQuery(w, config="english")
     return (
         Section.objects
         .annotate(rank=SearchRank(F("full_text_search"), query))
