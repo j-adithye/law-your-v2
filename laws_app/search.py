@@ -5,6 +5,7 @@ from pgvector import HalfVector
 from pgvector.django import CosineDistance
 from django.contrib.postgres.search import SearchQuery, SearchRank
 from django.db.models import F
+import requests
 
 from laws_app.models import Section
 
@@ -77,3 +78,71 @@ def hybrid_search(question: str, limit: int = 20, candidates: int = 20, k: int =
 
     sections = Section.objects.in_bulk(top_ids)  # {number: Section}
     return [sections[number] for number in top_ids]
+
+
+RERANK_URL = (
+    "https://ai.api.nvidia.com/v1/retrieval/"
+    "nvidia/nemotron-3.5-rerank-8b/reranking"
+)
+RERANK_MODEL = "nvidia/nemotron-3.5-rerank-8b"
+
+
+def get_rerank(query: str, passages: list[str], timeout: int = 60) -> list[dict]:
+    """
+    Raw API call. Sends one query + a list of passage strings to the
+    NIM reranker and returns the 'rankings' list from the response.
+
+    Each item looks like {"index": 1, "logit": -2.09}, where "index" is
+    the position of the passage in the list we sent. The API returns them
+    best-first, but we don't rely on that here.
+    """
+    api_key = os.getenv("NVIDIA_API_KEY")
+    if not api_key:
+        raise RuntimeError("NVIDIA_API_KEY is not set (check your .env)")
+
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Accept": "application/json",
+    }
+
+    payload = {
+        "model": RERANK_MODEL,
+        "query": {"text": query},
+        # Text only. The model also accepts an "image" field, but BNS
+        # sections don't need it.
+        "passages": [{"text": p} for p in passages],
+    }
+
+    response = requests.post(RERANK_URL, headers=headers, json=payload, timeout=timeout)
+    response.raise_for_status()  # raises on 4xx/5xx so errors don't pass silently
+    return response.json()["rankings"]
+
+
+def section_text(section) -> str:
+    """
+    Turn a Section into the text the reranker sees. Keep it the same as
+    what you embedded, so the reranker judges the same content.
+    """
+    return f"{section.title}\n{section.body}"
+
+
+def rerank(query: str, sections: list, top_n: int = 5) -> list[tuple]:
+    """
+    Take the candidate sections (e.g. the top 20 from hybrid_search),
+    rerank them against the query, and return the best top_n as
+    (section, score) tuples, best first.
+    """
+    # Nothing to rerank, and the API would probably reject an empty list.
+    if not sections:
+        return []
+
+    passages = [section_text(s) for s in sections]
+    rankings = get_rerank(query, passages)
+
+    # Sort by logit, highest first. The API already does this, but sorting
+    # here means the function doesn't break if that ever changes.
+    rankings = sorted(rankings, key=lambda r: r["logit"], reverse=True)
+
+    # "index" points back into the list we sent, which lines up with
+    # `sections`, so we can recover the original Section objects.
+    return [(sections[r["index"]], r["logit"]) for r in rankings[:top_n]]

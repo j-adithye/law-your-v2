@@ -3,7 +3,7 @@ from laws_app.search import keyword_search
 
 
 class Command(BaseCommand):
-    help = "Vector search over BNS sections"
+    help = "Keyword search over BNS sections"
 
     def add_arguments(self, parser):
         parser.add_argument("question", type=str)
