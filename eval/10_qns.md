@@ -25,15 +25,15 @@ Examples of expected section numbers are from memory. Check them against your ow
 
 ## Results
 
-| #   | Expected    | Rank(vector search) | Best distance | Notes            | Phase 7 Rank (keyword search) | Phase 7 (hybrid_search) |
-| --- | ----------- | ------------------- | ------------- | ---------------- | ----------------------------- | ----------------------- |
-| 1   | 103         | 2                   | 0.4067(104)   |                  | 1                             | 1                       |
-| 2   | 100,101,105 | 2,1,4               | 0.4075(101)   |                  | 4,-,1                         | 2,4,1                   |
-| 3   | 117         | missed              | 0.7280(114)   | vauge qn         | missed(best-312)              | missed(best 114)        |
-| 4   | 304         | 4                   | 0.7137(134)   |                  | missed(best-81)               | 1                       |
-| 5   | 310         | 2                   | 0.6184(331)   |                  | missed(best-331)              | 5                       |
-| 6   | 308         | missed              | 0.6537(32)    | similar          | missed(best-124)              | missed(best 119)        |
-| 7   | 85          | 2                   | 0.6298(80)    | similar          | missed(best-80)               | 2                       |
-| 8   | 78          | 1                   | 0.6142(78)    |                  | 4                             | 1                       |
-| 9   | 316         | 1                   | 0.6474(316)   |                  | 1                             | 1                       |
-| 10  | none        | -                   | 0.915(141)    | expected outcome | None(Expected)                | -                       |
+| #   | Expected    | Rank(vector search) | Best distance | Notes    | Rank(keyword search) | Rank(hybrid_search) | Rank(rerank) |
+| --- | ----------- | ------------------- | ------------- | -------- | -------------------- | ------------------- | ------------ |
+| 1   | 103         | 2                   | 0.4067(104)   |          | 1                    | 1                   | 1            |
+| 2   | 100,101,105 | 2,1,4               | 0.4075(101)   |          | 4,-,1                | 2,4,1               | 2,1,3        |
+| 3   | 117         | missed              | 0.7280(114)   | vauge qn | missed(best-312)     | missed(best 114)    | 2            |
+| 4   | 304         | 4                   | 0.7137(134)   |          | missed(best-81)      | 1                   | 1            |
+| 5   | 310         | 2                   | 0.6184(331)   |          | missed(best-331)     | 5                   | 2            |
+| 6   | 308         | missed              | 0.6537(32)    | similar  | missed(best-124)     | missed(best 119)    | 1            |
+| 7   | 85          | 2                   | 0.6298(80)    | similar  | missed(best-80)      | 2                   | 1            |
+| 8   | 78          | 1                   | 0.6142(78)    |          | 4                    | 1                   | 1            |
+| 9   | 316         | 1                   | 0.6474(316)   |          | 1                    | 1                   | 9            |
+| 10  | none        | -                   | 0.915(141)    | expected | None(Expected)       | -                   | -            |

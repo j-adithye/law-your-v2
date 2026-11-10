@@ -29,7 +29,7 @@ def embed_query(question: str) -> list[float]:
     return response.data[0].embedding
 
 
-def vector_search(question: str, limit: int = 5):
+def vector_search(question: str, limit: int = 20):
     query_vec = HalfVector(embed_query(question))
     return (
         Section.objects
@@ -40,7 +40,7 @@ def vector_search(question: str, limit: int = 5):
     
 import re
 
-def keyword_search(question: str, limit: int = 5):
+def keyword_search(question: str, limit: int = 20):
     words = re.findall(r"\w+", question)
     query = SearchQuery(words[0], config="english")
     for w in words[1:]:
@@ -146,3 +146,6 @@ def rerank(query: str, sections: list, top_n: int = 5) -> list[tuple]:
     # "index" points back into the list we sent, which lines up with
     # `sections`, so we can recover the original Section objects.
     return [(sections[r["index"]], r["logit"]) for r in rankings[:top_n]]
+
+
+
