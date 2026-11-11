@@ -22,7 +22,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         for i in range(len(q)):
             
-            sections = [s.number for s in hybrid_search(q[i], limit=20)]
+            sections = hybrid_search(q[i], limit=20)
             candidates = list(Section.objects.filter(number__in=sections))
             start = time.perf_counter()
             result = rerank(q[i], candidates, 5)

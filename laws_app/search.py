@@ -78,7 +78,7 @@ def hybrid_search(question: str, limit: int = 20, candidates: int = 20, k: int =
 
     sections = Section.objects.in_bulk(top_ids)  # {number: Section}
     return [sections[number] for number in top_ids]
-
+    
 
 RERANK_URL = (
     "https://ai.api.nvidia.com/v1/retrieval/"
@@ -149,3 +149,16 @@ def rerank(query: str, sections: list, top_n: int = 5) -> list[tuple]:
 
 
 
+def retrieve(question: str, limit: int = 20, top_n: int = 5) -> list[tuple]:
+    """
+    Full retrieval pipeline: hybrid search -> rerank.
+
+    question   : the user's question
+    candidates : how many sections hybrid_search pulls in (cast a wide net)
+    top_n      : how many sections to keep after reranking
+
+    Returns a list of (section, score) tuples, best first. The score is the
+    raw reranker logit: use it for ordering and debugging, not as a probability.
+    """
+    candidates = hybrid_search(question, limit=limit)
+    return rerank(question, candidates, top_n=top_n)
