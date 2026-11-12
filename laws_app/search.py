@@ -108,13 +108,11 @@ def get_rerank(query: str, passages: list[str], timeout: int = 60) -> list[dict]
     payload = {
         "model": RERANK_MODEL,
         "query": {"text": query},
-        # Text only. The model also accepts an "image" field, but BNS
-        # sections don't need it.
         "passages": [{"text": p} for p in passages],
     }
 
     response = requests.post(RERANK_URL, headers=headers, json=payload, timeout=timeout)
-    response.raise_for_status()  # raises on 4xx/5xx so errors don't pass silently
+    response.raise_for_status()  # if error raises on 4xx/5xx
     return response.json()["rankings"]
 
 
@@ -132,19 +130,18 @@ def rerank(query: str, sections: list, top_n: int = 5) -> list[tuple]:
     rerank them against the query, and return the best top_n as
     (section, score) tuples, best first.
     """
-    # Nothing to rerank, and the API would probably reject an empty list.
+    # Nothing to rerank, and the API would reject an empty list.
     if not sections:
         return []
 
     passages = [section_text(s) for s in sections]
     rankings = get_rerank(query, passages)
 
-    # Sort by logit, highest first. The API already does this, but sorting
-    # here means the function doesn't break if that ever changes.
+    # Sort by logit, highest first.
     rankings = sorted(rankings, key=lambda r: r["logit"], reverse=True)
 
-    # "index" points back into the list we sent, which lines up with
-    # `sections`, so we can recover the original Section objects.
+    # "index" points back into the list sent, which lines up with
+    # `sections`, so we can return the original Section objects.
     return [(sections[r["index"]], r["logit"]) for r in rankings[:top_n]]
 
 
@@ -154,11 +151,12 @@ def retrieve(question: str, limit: int = 20, top_n: int = 5) -> list[tuple]:
     Full retrieval pipeline: hybrid search -> rerank.
 
     question   : the user's question
-    candidates : how many sections hybrid_search pulls in (cast a wide net)
+    candidates : how many sections hybrid_search pulls in
     top_n      : how many sections to keep after reranking
 
     Returns a list of (section, score) tuples, best first. The score is the
     raw reranker logit: use it for ordering and debugging, not as a probability.
     """
     candidates = hybrid_search(question, limit=limit)
-    return rerank(question, candidates, top_n=top_n)
+    result = rerank(question, candidates, top_n=top_n)
+    return result

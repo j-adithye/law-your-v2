@@ -43,6 +43,6 @@ class Section(models.Model):
             ]
 
     def __str__(self):
-        return f"Section {self.number}: {self.title}"
+        return f"Section {self.number}"
     
     
