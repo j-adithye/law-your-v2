@@ -16,15 +16,18 @@ def get_answer(question:str, context:str) -> str:
 	completion = client.chat.completions.create(
 	model="nvidia/nemotron-3.5-lightning-30b-a3b",
 	messages=[
-		{"role": "developer", "content": f'''You answer questions about the Bharatiya Nyaya Sanhita (BNS), 2023.\
+		{"role": "system", "content": f'''You answer questions about the Bharatiya Nyaya Sanhita (BNS), 2023.
 Rules:
-- Use ONLY the sections provided below. Do not use outside knowledge.
-- Cite the section number for every claim.
+- Use ONLY the sections provided below as Context. Do not use outside knowledge. Not even knowledge related to the given context.
+- If a user asks about 'IPC' mention that you do not have any information on that.
+- don't say things like 'according to the context provided' and “don't list or dump all the sections.”
+- Cite the section number for every claim. Return citations as a list of section numbers only.
 - If the sections do not answer the question, set found to false
 and do not guess.
-- Reply in JSON with the keys: answer, citations, found.'''},
-		{"role":"system","content":f"{context}"},
-		{"role":"user","content":f"{question}"}],
+- Reply in JSON with the keys: answer, citations, found.
+Context:
+{context}
+'''},{"role":"user","content":f"{question}"}],
 	temperature=0.2,
 	top_p=0.95,
 	max_tokens=1000,
@@ -50,13 +53,13 @@ def get_context(question:str) -> str:
 'exceptions': {section.exceptions}; 
 \n'''
         context = context + curr
-    
     return context
 
 def ask():
     question = input('qn? : ')
     context = get_context(question)
     print(get_answer(question,context))
+    print('iam an ai assistant and can make mistakes this is not legal advice')
     
     
     
