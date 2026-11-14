@@ -142,11 +142,11 @@ def rerank(query: str, sections: list, top_n: int = 5) -> list[tuple]:
 
     # "index" points back into the list sent, which lines up with
     # `sections`, so we can return the original Section objects.
-    return [(sections[r["index"]], r["logit"]) for r in rankings[:top_n]]
+    return [sections[r["index"]] for r in rankings[:top_n]]
 
 
 
-def retrieve(question: str, limit: int = 20, top_n: int = 5) -> list[tuple]:
+def retrieve(question: str, limit: int = 20, top_n: int = 20) -> list[tuple]:
     """
     Full retrieval pipeline: hybrid search -> rerank.
 
