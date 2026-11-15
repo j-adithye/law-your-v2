@@ -20,11 +20,11 @@ def get_answer(question:str, context:str) -> str:
 Rules:
 - Use ONLY the sections provided below as Context. Do not use outside knowledge. Not even knowledge related to the given context.
 - If a user asks about 'IPC' mention that you do not have any information on that.
-- don't say things like 'according to the context provided' and “don't list or dump all the sections.”
 - Cite the section number for every claim. Return citations as a list of section numbers only.
 - If the sections do not answer the question, set found to false
 and do not guess.
 - Reply in JSON with the keys: answer, citations, found.
+- Don't say things like 'according to the context provided' and “don't list or dump all the sections.”
 Context:
 {context}
 '''},{"role":"user","content":f"{question}"}],
@@ -55,11 +55,38 @@ def get_context(question:str) -> str:
         context = context + curr
     return context
 
+import json
+
+def parse_answer(raw: str) -> dict:
+    text = raw.strip()
+
+    # remove ```json ... ``` fences if the model added them
+    if text.startswith("```"):
+        text = text.strip("`")
+        if text.lower().startswith("json"):
+            text = text[4:]
+        text = text.strip()
+
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        return {"answer": "", "citations": [], "found": False, "error": "bad_json"}
+
+    # make sure the keys exist, even if the model skipped one
+    return {
+        "answer": data.get("answer", ""),
+        "citations": data.get("citations", []),
+        "found": bool(data.get("found", False)),
+    }
+
 def ask():
     question = input('qn? : ')
     context = get_context(question)
-    print(get_answer(question,context))
+    raw = get_answer(question,context)
+    result = parse_answer(raw)
+    print(type(result))
     print('iam an ai assistant and can make mistakes this is not legal advice')
+    return result
     
     
     
