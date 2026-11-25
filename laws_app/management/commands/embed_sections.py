@@ -6,7 +6,7 @@ from openai import OpenAI, RateLimitError
 
 from laws_app.models import Section
 
-MODEL = "nvidia/nemotron-3-embed-1b"
+MODEL = "nvidia/nemotron-3.5-embed-1b"
 BATCH_SIZE = 16
 MAX_RETRIES = 5
 
@@ -41,10 +41,21 @@ def embed_batch(texts):
 
 
 class Command(BaseCommand):
-    help = "Embed all sections that don't have an embedding yet"
+    help = "Embed sections that don't have an embedding yet (or all with --force)"
+
+    def add_arguments(self, parser):
+        parser.add_argument(
+            "--force",
+            action="store_true",
+            help="Re-embed every section, even ones that already have an embedding",
+        )
 
     def handle(self, *args, **options):
-        pending = list(Section.objects.filter(embedding__isnull=True).order_by("number"))
+        if options["force"]:
+            qs = Section.objects.all()
+        else:
+            qs = Section.objects.filter(embedding__isnull=True)
+        pending = list(qs.order_by("number"))
         self.stdout.write(f"{len(pending)} sections to embed")
 
         for i in range(0, len(pending), BATCH_SIZE):
