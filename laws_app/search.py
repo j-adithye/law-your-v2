@@ -16,7 +16,7 @@ client = OpenAI(
     api_key=os.getenv("NVIDIA_API_KEY"),
 )
 
-MODEL = "nvidia/nemotron-3-embed-1b"
+MODEL = "nvidia/nemotron-3.5-embed-1b"
 
 
 def embed_query(question: str) -> list[float]:
